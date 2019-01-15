@@ -9,7 +9,7 @@
 using ionizing::WAVEHIGH;
 
 int main(int argc, char* argv[]) {
-  int argc_bak = argc;
+  // int argc_bak = argc;
   cxxopts::Options options{argv[0],"A wavefunction plotter using WAVECAR."};
 
   bool 
@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
   auto result = options.parse(argc, argv);
   is_verbose = false; // unused, will impl 100 yrs later
 
-  if (is_print_help or 1 == argc_bak) {
+  if (is_print_help /* or 1 == argc_bak */) {
     std::cout << options.help();
     return 0;
   }

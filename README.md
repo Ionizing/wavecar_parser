@@ -1,6 +1,16 @@
 # plotWave
 
-Acknowledgement: [Qijing Zheng](https://github.com/QijingZheng/VaspBandUnfolding), [Hao Ren](renh@upc.edu.cn)
+Acknowledgement: 
+- [Qijing Zheng](https://github.com/QijingZheng/VaspBandUnfolding)
+- [Hao Ren](renh@upc.edu.cn)
+- [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page)
+- [FFTW3](http://www.fftw.org)
+
+# Requirements
+
+- A compiler supports C++11 (gcc4.9 or upper, clang3.3 or upper, intel compiler not tested)
+- FFTW3
+- Eigen3 (already included)
 
 ## Input file
 

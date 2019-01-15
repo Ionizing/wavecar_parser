@@ -1,0 +1,98 @@
+[
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/fft.o", 
+   "-c", 
+   "src/fft.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/fft.cc"
+ }, 
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/wavecar.o", 
+   "-c", 
+   "src/wavecar.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/wavecar.cc"
+ }, 
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/stringops.o", 
+   "-c", 
+   "src/stringops.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/stringops.cc"
+ }, 
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/binio.o", 
+   "-c", 
+   "src/binio.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/binio.cc"
+ }, 
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/plotWave.o", 
+   "-c", 
+   "src/plotWave.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/plotWave.cc"
+ }, 
+ {
+  "directory": "/Users/ionizing/Documents/github/wavecar_parser", 
+  "arguments": [
+   "g++", 
+   "-o", 
+   "src/wavehigh.o", 
+   "-c", 
+   "src/wavehigh.cc", 
+   "-I/usr/local/include/eigen3/", 
+   "-I./include/", 
+   "-g", 
+   "-Wall", 
+   "-std=c++11"
+  ], 
+  "file": "src/wavehigh.cc"
+ }
+]
