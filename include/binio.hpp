@@ -19,7 +19,7 @@ namespace ionizing {
     BinIO(const BinIO&)            = delete;
     BinIO& operator=(const BinIO&) = delete;
                             // change pointer focus
-    void seek(const int n);
+    void seek(const long n);
     int getFileSize() const;
 
   template <typename T>

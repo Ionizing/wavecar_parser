@@ -26,7 +26,7 @@ namespace ionizing {
     ifs.seekg(0, std::ios::beg);
   }
 
-  void BinIO::seek(const int n) {
+  void BinIO::seek(const long n) {
     if (n < 0 or n >= _fileSize) {
       std::cout << "****ERROR!****  seeking an invalid file position: " << n << " !\n";
       std::abort();

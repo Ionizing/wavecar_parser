@@ -1,12 +1,12 @@
 INC := -I./include/
-CC := g++
-FLAGS := -Wall -std=c++11 -O2 #-g -fno-omit-frame-pointer -fsanitize=address
+CC := c++
+FLAGS := -Wextra -Wall -std=c++11 -O2 #-g -fno-omit-frame-pointer -fsanitize=address
 LFLAGS := -lfftw3
 
 SOURCE := $(wildcard ./src/*.cc)
 OBJS := $(patsubst %.cc, %.o, $(SOURCE))
 
-.PHONY: clean test all
+.PHONY: help clean test all veryclean
 .SECONDARY: $(OBJS)
 
 all: plotWave.out
@@ -24,3 +24,6 @@ plotWave.out: $(OBJS)
 
 clean:
 	@rm -rf $(OBJS) *.out
+
+veryclean: clean
+	@rm *.vasp

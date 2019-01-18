@@ -153,7 +153,7 @@ namespace ionizing {
 
         // std::abort();
 
-        int current_nplw;
+        int current_nplw = 0;
         if (0 == ispin) {
           current_nplw          = static_cast<int>(buf1(0));
           _nPlaneWaves(kpoint)  = current_nplw;
