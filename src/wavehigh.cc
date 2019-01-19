@@ -90,7 +90,7 @@ namespace ionizing {
   const Vector3i WAVEHIGH::get_ngrid(const Mat33d& Acell) const {
     const double encut = getHeader()._enCut;
     Vector3i out;
-    for (size_t i=0; i!=Acell.rows(); ++i) {
+    for (long i=0; i!=Acell.rows(); ++i) {
       double vec_len = Acell.row(i).norm();
       out(i) = 2 * std::ceil(
             std::sqrt(encut / RY_TO_EV) / (PIx2 / (vec_len / AU_TO_A))
@@ -190,7 +190,7 @@ namespace ionizing {
     // std::cout << __LINE__ << ": Bcell = \n" << getReciprocalVectors() << std::endl;
 
     Vector3d kvec = getKVectors().row(ikpoint);
-    for (int i=0; i!=tmpkgrid.size(); ++i) {
+    for (size_t i=0; i!=tmpkgrid.size(); ++i) {
       double tmp_energy = PIx2 * (
              getReciprocalVectors() * (tmpkgrid[i] + kvec)
           ).norm();
@@ -202,7 +202,7 @@ namespace ionizing {
     } // end for i
     
     out.resize(tmpout.size(), 3);
-    for (int i=0; i!=tmpout.size(); ++i) {
+    for (size_t i=0; i!=tmpout.size(); ++i) {
       out.row(i) = tmpout[i].cast<int>();
     }
 

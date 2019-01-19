@@ -65,7 +65,7 @@ public:
 
 
   void printInfo(std::ostream& os) const;
-  const bool checkIndex(const int  ispin,
+  bool checkIndex(const int  ispin,
                         const int  ikpoint, 
                         const int  iband) const;
   const Veccd getBandCoeff(const int   ispin,

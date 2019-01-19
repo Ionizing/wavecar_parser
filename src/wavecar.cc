@@ -254,7 +254,7 @@ namespace ionizing {
     return _nPlaneWaves;
   }
 
-  const bool WAVECAR::checkIndex( const int ispin,
+  bool WAVECAR::checkIndex( const int ispin,
          const int ikpoint, const int iband) const {
     if (ispin < 0 or ispin >= 2) {
       std::cerr << "Invalid spin index: " << ispin << std::endl;
