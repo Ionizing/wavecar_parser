@@ -1,5 +1,7 @@
 # plotWave
 
+[![Build Status](https://travis-ci.org/Ionizing/wavecar_parser.svg?branch=master)](https://travis-ci.org/Ionizing/wavecar_parser)
+
 Acknowledgement: 
 - [Qijing Zheng](https://github.com/QijingZheng/VaspBandUnfolding)
 - [Hao Ren](renh@upc.edu.cn)
