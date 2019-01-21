@@ -6,5 +6,10 @@ matrix:
     - os: linux
     - compiler: gcc
 
+addons:
+  apt:
+    packages:
+      - libfftw*
+
 script:
   - make
