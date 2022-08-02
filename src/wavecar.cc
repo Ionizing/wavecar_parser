@@ -36,7 +36,7 @@ namespace ionizing {
       std::abort();
     }
     
-    if (_info._nSpin != 0 and _info._nSpin != 1) {
+    if (_info._nSpin != 1 and _info._nSpin != 2) {
       std::cout << "****ERROR**** WAVECAR _nSpin wrong: "
         << _info._nSpin << " !\n";
       std::abort();
@@ -154,7 +154,7 @@ namespace ionizing {
         // std::abort();
 
         int current_nplw = 0;
-        if (0 == ispin) {
+        //if (0 == ispin) {
           current_nplw          = static_cast<int>(buf1(0));
           _nPlaneWaves(kpoint)  = current_nplw;
           _kVectors.row(kpoint) = buf1.segment<3>(1);
@@ -166,7 +166,7 @@ namespace ionizing {
 #endif
 
 
-        }
+        //}
 
         _bands(ispin).row(kpoint).real() = buf2.col(0); 
         _bands(ispin).row(kpoint).imag() = buf2.col(1); 
