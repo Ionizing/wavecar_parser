@@ -604,7 +604,7 @@ namespace ionizing {
           for (int j=0; j!=ny; ++j) {
             for (int i=0; i!=nx; ++i) {
               nwrite += 1;
-              sprintf(line + strlen(line), "%16.8E ", phi(i, j, k).real());
+              sprintf(line + strlen(line), "%16.8E ", phi(i, j, k).imag());
               if (nwrite % 10 == 0) {
                 strcat(line, "\n");
                 out << line;
@@ -619,7 +619,7 @@ namespace ionizing {
           for (int j=0; j!=ny; ++j) {
             for (int i=0; i!=nx; ++i) {
               nwrite += 1;
-              sprintf(line + strlen(line), "%16.8E ", phi(i, j, k).imag());
+              sprintf(line + strlen(line), "%16.8E ", phi(i, j, k).real());
               if (nwrite % 10 == 0) {
                 strcat(line, "\n");
                 out << line;
